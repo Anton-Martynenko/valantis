@@ -1,12 +1,6 @@
 import React from 'react';
 
-export type ItemsPropsType = {
-    brand: string,
-    product: string,
-    price: string
-}
-
-const Items = (props: ItemsPropsType) => {
+const Items = (props) => {
     return (
             <div>
                 <div >
