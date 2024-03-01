@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import {Button} from './Button';
+import './Pagination.css';
 
 export const Pagination = (props) => {
 
@@ -22,9 +24,9 @@ export const Pagination = (props) => {
 
     return (
         <div>
-            <button onClick={changePageDown}>Назад</button>
-            <span>{pageNumber}</span>
-            <button onClick={changePageUp}>Вперед</button>
+            <Button click={changePageDown} text={'Назад'}/>
+            <span className='pageNumber'>{pageNumber}</span>
+            <Button click={changePageUp} text={'Вперед'}/>
         </div>
     )
 }
