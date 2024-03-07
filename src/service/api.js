@@ -1,7 +1,7 @@
 import {md5} from 'js-md5';
 import axios from 'axios';
 
-const apiAdress = 'http://api.valantis.store:40000/';
+const apiAdress = 'https://api.valantis.store:41000/';
 
 const createHeaders = () => {
     let date = new Date();
